@@ -11,15 +11,15 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), configuration: SelectPhotoIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(for configuration: SelectPhotoIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: SelectPhotoIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -37,7 +37,7 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
+    let configuration: SelectPhotoIntent
 }
 
 struct WidgetsEntryView : View {
@@ -53,7 +53,7 @@ struct Widgets: Widget {
     let kind: String = "Widgets"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: SelectPhotoIntent.self, provider: Provider()) { entry in
             WidgetsEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
@@ -63,7 +63,7 @@ struct Widgets: Widget {
 
 struct Widgets_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetsEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetsEntryView(entry: SimpleEntry(date: Date(), configuration: SelectPhotoIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

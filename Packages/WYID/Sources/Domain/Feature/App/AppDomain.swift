@@ -7,12 +7,18 @@
 
 import Foundation
 
-public enum AppDomain: Domain {
+public struct AppDomain {
     public struct State: Equatable {
-        public init() {}
+        public var homeState: Home.State
+
+        public init(homeState: Home.State) {
+            self.homeState = homeState
+        }
     }
 
-    public enum Action {
-        
+    public enum Action: Equatable {
+        case home(Home.Action)
     }
+
+    public init() {}
 }

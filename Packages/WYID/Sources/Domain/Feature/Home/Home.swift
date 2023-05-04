@@ -7,23 +7,42 @@
 
 import Foundation
 
-public enum Home: Domain {
+public struct Home {
     public struct State: Equatable {
         public var tab: Tab
 
-        
+        public var resourcesState: Resources.State
+
+        public var widgetsState: Widgets.State
+
+        public init(
+            tab: Tab = .widgets,
+            resourcesState: Resources.State = .init(),
+            widgetsState: Widgets.State = .init()
+        ) {
+            self.tab = tab
+            self.resourcesState = resourcesState
+            self.widgetsState = widgetsState
+        }
     }
 
-    public enum Action {
+    public enum Action: Equatable {
         case selectTab(Tab)
+
+        case resources(Resources.Action)
+        case widgets(Widgets.Action)
     }
+
+    public init() {}
 }
 
 #if DEBUG
 
 extension Home.State {
     public static let mock = Self(
-        tab: .widgets
+        tab: .widgets,
+        resourcesState: .mock,
+        widgetsState: .mock
     )
 }
 

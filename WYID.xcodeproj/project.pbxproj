@@ -11,27 +11,52 @@
 		531421F629C36131001671EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531421F529C36131001671EB /* ContentView.swift */; };
 		531421F829C36135001671EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531421F729C36135001671EB /* Assets.xcassets */; };
 		531421FB29C36135001671EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531421FA29C36135001671EB /* Preview Assets.xcassets */; };
-		5314220529C36135001671EB /* WYIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5314220429C36135001671EB /* WYIDTests.swift */; };
-		5314220F29C36135001671EB /* WYIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5314220E29C36135001671EB /* WYIDUITests.swift */; };
-		5314221129C36135001671EB /* WYIDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5314221029C36135001671EB /* WYIDUITestsLaunchTests.swift */; };
+		531BF35B29C3860B00A28F40 /* WYID in Frameworks */ = {isa = PBXBuildFile; productRef = 531BF35A29C3860B00A28F40 /* WYID */; };
+		53FB4BAF29C37C7800AE32F7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FB4BAE29C37C7800AE32F7 /* WidgetKit.framework */; };
+		53FB4BB129C37C7800AE32F7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FB4BB029C37C7800AE32F7 /* SwiftUI.framework */; };
+		53FB4BB429C37C7900AE32F7 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BB329C37C7900AE32F7 /* Widgets.swift */; };
+		53FB4BB729C37C7B00AE32F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB4BB629C37C7B00AE32F7 /* Assets.xcassets */; };
+		53FB4BB929C37C7B00AE32F7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BB529C37C7900AE32F7 /* Widgets.intentdefinition */; };
+		53FB4BBA29C37C7B00AE32F7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BB529C37C7900AE32F7 /* Widgets.intentdefinition */; };
+		53FB4BBD29C37C7B00AE32F7 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53FB4BAC29C37C7800AE32F7 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53FB4BED29C37DC800AE32F7 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FB4BC829C37DA500AE32F7 /* Intents.framework */; };
+		53FB4BF029C37DC800AE32F7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BEF29C37DC800AE32F7 /* IntentHandler.swift */; };
+		53FB4BF429C37DC800AE32F7 /* Intent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53FB4BEC29C37DC800AE32F7 /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53FB4BF829C37DD200AE32F7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BB529C37C7900AE32F7 /* Widgets.intentdefinition */; };
+		53FB4BFA29C37DEF00AE32F7 /* IntentHandler+SelectPhotoIntentHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB4BF929C37DEF00AE32F7 /* IntentHandler+SelectPhotoIntentHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5314220129C36135001671EB /* PBXContainerItemProxy */ = {
+		53FB4BBB29C37C7B00AE32F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 531421E829C36131001671EB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 531421EF29C36131001671EB;
-			remoteInfo = WYID;
+			remoteGlobalIDString = 53FB4BAB29C37C7800AE32F7;
+			remoteInfo = WidgetsExtension;
 		};
-		5314220B29C36135001671EB /* PBXContainerItemProxy */ = {
+		53FB4BF229C37DC800AE32F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 531421E829C36131001671EB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 531421EF29C36131001671EB;
-			remoteInfo = WYID;
+			remoteGlobalIDString = 53FB4BEB29C37DC800AE32F7;
+			remoteInfo = Intent;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53FB4BC129C37C7B00AE32F7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53FB4BF429C37DC800AE32F7 /* Intent.appex in Embed Foundation Extensions */,
+				53FB4BBD29C37C7B00AE32F7 /* WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		531421F029C36131001671EB /* WYID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYID.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,11 +64,19 @@
 		531421F529C36131001671EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		531421F729C36135001671EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531421FA29C36135001671EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5314220029C36135001671EB /* WYIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5314220429C36135001671EB /* WYIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYIDTests.swift; sourceTree = "<group>"; };
-		5314220A29C36135001671EB /* WYIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5314220E29C36135001671EB /* WYIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYIDUITests.swift; sourceTree = "<group>"; };
-		5314221029C36135001671EB /* WYIDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYIDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53FB4BAC29C37C7800AE32F7 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53FB4BAE29C37C7800AE32F7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		53FB4BB029C37C7800AE32F7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		53FB4BB329C37C7900AE32F7 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		53FB4BB529C37C7900AE32F7 /* Widgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widgets.intentdefinition; sourceTree = "<group>"; };
+		53FB4BB629C37C7B00AE32F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53FB4BB829C37C7B00AE32F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FB4BC229C37CF600AE32F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53FB4BC829C37DA500AE32F7 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		53FB4BEC29C37DC800AE32F7 /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53FB4BEF29C37DC800AE32F7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		53FB4BF129C37DC800AE32F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FB4BF929C37DEF00AE32F7 /* IntentHandler+SelectPhotoIntentHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntentHandler+SelectPhotoIntentHandling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +84,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531BF35B29C3860B00A28F40 /* WYID in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531421FD29C36135001671EB /* Frameworks */ = {
+		53FB4BA929C37C7800AE32F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FB4BB129C37C7800AE32F7 /* SwiftUI.framework in Frameworks */,
+				53FB4BAF29C37C7800AE32F7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5314220729C36135001671EB /* Frameworks */ = {
+		53FB4BE929C37DC800AE32F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FB4BED29C37DC800AE32F7 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				531421F229C36131001671EB /* WYID */,
-				5314220329C36135001671EB /* WYIDTests */,
-				5314220D29C36135001671EB /* WYIDUITests */,
+				53FB4BB229C37C7900AE32F7 /* Widgets */,
+				53FB4BEE29C37DC800AE32F7 /* Intent */,
+				53FB4BAD29C37C7800AE32F7 /* Frameworks */,
 				531421F129C36131001671EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				531421F029C36131001671EB /* WYID.app */,
-				5314220029C36135001671EB /* WYIDTests.xctest */,
-				5314220A29C36135001671EB /* WYIDUITests.xctest */,
+				53FB4BAC29C37C7800AE32F7 /* WidgetsExtension.appex */,
+				53FB4BEC29C37DC800AE32F7 /* Intent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +132,7 @@
 		531421F229C36131001671EB /* WYID */ = {
 			isa = PBXGroup;
 			children = (
+				53FB4BC229C37CF600AE32F7 /* Info.plist */,
 				531421F329C36131001671EB /* WYIDApp.swift */,
 				531421F529C36131001671EB /* ContentView.swift */,
 				531421F729C36135001671EB /* Assets.xcassets */,
@@ -110,21 +149,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5314220329C36135001671EB /* WYIDTests */ = {
+		53FB4BAD29C37C7800AE32F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5314220429C36135001671EB /* WYIDTests.swift */,
+				53FB4BAE29C37C7800AE32F7 /* WidgetKit.framework */,
+				53FB4BB029C37C7800AE32F7 /* SwiftUI.framework */,
+				53FB4BC829C37DA500AE32F7 /* Intents.framework */,
 			);
-			path = WYIDTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5314220D29C36135001671EB /* WYIDUITests */ = {
+		53FB4BB229C37C7900AE32F7 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				5314220E29C36135001671EB /* WYIDUITests.swift */,
-				5314221029C36135001671EB /* WYIDUITestsLaunchTests.swift */,
+				53FB4BB329C37C7900AE32F7 /* Widgets.swift */,
+				53FB4BB529C37C7900AE32F7 /* Widgets.intentdefinition */,
+				53FB4BB629C37C7B00AE32F7 /* Assets.xcassets */,
+				53FB4BB829C37C7B00AE32F7 /* Info.plist */,
 			);
-			path = WYIDUITests;
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		53FB4BEE29C37DC800AE32F7 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				53FB4BEF29C37DC800AE32F7 /* IntentHandler.swift */,
+				53FB4BF129C37DC800AE32F7 /* Info.plist */,
+				53FB4BF929C37DEF00AE32F7 /* IntentHandler+SelectPhotoIntentHandling.swift */,
+			);
+			path = Intent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,51 +190,55 @@
 				531421EC29C36131001671EB /* Sources */,
 				531421ED29C36131001671EB /* Frameworks */,
 				531421EE29C36131001671EB /* Resources */,
+				53FB4BC129C37C7B00AE32F7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				53FB4BBC29C37C7B00AE32F7 /* PBXTargetDependency */,
+				53FB4BF329C37DC800AE32F7 /* PBXTargetDependency */,
 			);
 			name = WYID;
+			packageProductDependencies = (
+				531BF35A29C3860B00A28F40 /* WYID */,
+			);
 			productName = WYID;
 			productReference = 531421F029C36131001671EB /* WYID.app */;
 			productType = "com.apple.product-type.application";
 		};
-		531421FF29C36135001671EB /* WYIDTests */ = {
+		53FB4BAB29C37C7800AE32F7 /* WidgetsExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5314221729C36135001671EB /* Build configuration list for PBXNativeTarget "WYIDTests" */;
+			buildConfigurationList = 53FB4BBE29C37C7B00AE32F7 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */;
 			buildPhases = (
-				531421FC29C36135001671EB /* Sources */,
-				531421FD29C36135001671EB /* Frameworks */,
-				531421FE29C36135001671EB /* Resources */,
+				53FB4BA829C37C7800AE32F7 /* Sources */,
+				53FB4BA929C37C7800AE32F7 /* Frameworks */,
+				53FB4BAA29C37C7800AE32F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5314220229C36135001671EB /* PBXTargetDependency */,
 			);
-			name = WYIDTests;
-			productName = WYIDTests;
-			productReference = 5314220029C36135001671EB /* WYIDTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = WidgetsExtension;
+			productName = WidgetsExtension;
+			productReference = 53FB4BAC29C37C7800AE32F7 /* WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
-		5314220929C36135001671EB /* WYIDUITests */ = {
+		53FB4BEB29C37DC800AE32F7 /* Intent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5314221A29C36135001671EB /* Build configuration list for PBXNativeTarget "WYIDUITests" */;
+			buildConfigurationList = 53FB4BF529C37DC900AE32F7 /* Build configuration list for PBXNativeTarget "Intent" */;
 			buildPhases = (
-				5314220629C36135001671EB /* Sources */,
-				5314220729C36135001671EB /* Frameworks */,
-				5314220829C36135001671EB /* Resources */,
+				53FB4BE829C37DC800AE32F7 /* Sources */,
+				53FB4BE929C37DC800AE32F7 /* Frameworks */,
+				53FB4BEA29C37DC800AE32F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5314220C29C36135001671EB /* PBXTargetDependency */,
 			);
-			name = WYIDUITests;
-			productName = WYIDUITests;
-			productReference = 5314220A29C36135001671EB /* WYIDUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = Intent;
+			productName = Intent;
+			productReference = 53FB4BEC29C37DC800AE32F7 /* Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,13 +253,11 @@
 					531421EF29C36131001671EB = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
-					531421FF29C36135001671EB = {
+					53FB4BAB29C37C7800AE32F7 = {
 						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 531421EF29C36131001671EB;
 					};
-					5314220929C36135001671EB = {
+					53FB4BEB29C37DC800AE32F7 = {
 						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 531421EF29C36131001671EB;
 					};
 				};
 			};
@@ -220,8 +275,8 @@
 			projectRoot = "";
 			targets = (
 				531421EF29C36131001671EB /* WYID */,
-				531421FF29C36135001671EB /* WYIDTests */,
-				5314220929C36135001671EB /* WYIDUITests */,
+				53FB4BAB29C37C7800AE32F7 /* WidgetsExtension */,
+				53FB4BEB29C37DC800AE32F7 /* Intent */,
 			);
 		};
 /* End PBXProject section */
@@ -236,14 +291,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531421FE29C36135001671EB /* Resources */ = {
+		53FB4BAA29C37C7800AE32F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FB4BB729C37C7B00AE32F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5314220829C36135001671EB /* Resources */ = {
+		53FB4BEA29C37DC800AE32F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,39 +314,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				531421F629C36131001671EB /* ContentView.swift in Sources */,
+				53FB4BBA29C37C7B00AE32F7 /* Widgets.intentdefinition in Sources */,
 				531421F429C36131001671EB /* WYIDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531421FC29C36135001671EB /* Sources */ = {
+		53FB4BA829C37C7800AE32F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5314220529C36135001671EB /* WYIDTests.swift in Sources */,
+				53FB4BB929C37C7B00AE32F7 /* Widgets.intentdefinition in Sources */,
+				53FB4BB429C37C7900AE32F7 /* Widgets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5314220629C36135001671EB /* Sources */ = {
+		53FB4BE829C37DC800AE32F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5314220F29C36135001671EB /* WYIDUITests.swift in Sources */,
-				5314221129C36135001671EB /* WYIDUITestsLaunchTests.swift in Sources */,
+				53FB4BF829C37DD200AE32F7 /* Widgets.intentdefinition in Sources */,
+				53FB4BFA29C37DEF00AE32F7 /* IntentHandler+SelectPhotoIntentHandling.swift in Sources */,
+				53FB4BF029C37DC800AE32F7 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5314220229C36135001671EB /* PBXTargetDependency */ = {
+		53FB4BBC29C37C7B00AE32F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 531421EF29C36131001671EB /* WYID */;
-			targetProxy = 5314220129C36135001671EB /* PBXContainerItemProxy */;
+			target = 53FB4BAB29C37C7800AE32F7 /* WidgetsExtension */;
+			targetProxy = 53FB4BBB29C37C7B00AE32F7 /* PBXContainerItemProxy */;
 		};
-		5314220C29C36135001671EB /* PBXTargetDependency */ = {
+		53FB4BF329C37DC800AE32F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 531421EF29C36131001671EB /* WYID */;
-			targetProxy = 5314220B29C36135001671EB /* PBXContainerItemProxy */;
+			target = 53FB4BEB29C37DC800AE32F7 /* Intent */;
+			targetProxy = 53FB4BF229C37DC800AE32F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +471,7 @@
 		5314221529C36135001671EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +480,7 @@
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WYID/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,6 +502,7 @@
 		5314221629C36135001671EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +511,7 @@
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WYID/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,79 +530,107 @@
 			};
 			name = Release;
 		};
-		5314221829C36135001671EB /* Debug */ = {
+		53FB4BBF29C37C7B00AE32F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYIDTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYID.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYID.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WYID";
 			};
 			name = Debug;
 		};
-		5314221929C36135001671EB /* Release */ = {
+		53FB4BC029C37C7B00AE32F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYIDTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYID.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYID.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WYID";
 			};
 			name = Release;
 		};
-		5314221B29C36135001671EB /* Debug */ = {
+		53FB4BF629C37DC900AE32F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYIDUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYID.Intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WYID;
 			};
 			name = Debug;
 		};
-		5314221C29C36135001671EB /* Release */ = {
+		53FB4BF729C37DC900AE32F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FF7DL6Z6Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Intent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYIDUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kobayashi.shoto.wyid.WYID.Intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WYID;
 			};
 			name = Release;
 		};
@@ -564,25 +655,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5314221729C36135001671EB /* Build configuration list for PBXNativeTarget "WYIDTests" */ = {
+		53FB4BBE29C37C7B00AE32F7 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5314221829C36135001671EB /* Debug */,
-				5314221929C36135001671EB /* Release */,
+				53FB4BBF29C37C7B00AE32F7 /* Debug */,
+				53FB4BC029C37C7B00AE32F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5314221A29C36135001671EB /* Build configuration list for PBXNativeTarget "WYIDUITests" */ = {
+		53FB4BF529C37DC900AE32F7 /* Build configuration list for PBXNativeTarget "Intent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5314221B29C36135001671EB /* Debug */,
-				5314221C29C36135001671EB /* Release */,
+				53FB4BF629C37DC900AE32F7 /* Debug */,
+				53FB4BF729C37DC900AE32F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		531BF35A29C3860B00A28F40 /* WYID */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WYID;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 531421E829C36131001671EB /* Project object */;
 }
